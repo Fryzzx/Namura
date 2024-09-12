@@ -520,10 +520,25 @@ color: #6a6d78;
 @media screen and (max-width: 600px) {
 .wrapper .carousel {
   grid-auto-columns: 100%;
-  max-width: 500px;
+  max-width: 550px;
   width: 100%  ;
 }
+.main-content{
+    max-width: 480px;
 }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+        max-width: 300px;
+        width: 100%  ;
+      }
+    .main-content{
+        max-width: 380px;
+}
+}
+    
 
 
 footer{
