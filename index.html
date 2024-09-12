@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!--- box icons link --->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+
+    <!--- remix icons link --->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--- google font link --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Namura</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#home" class="logo">NHG</a>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#footer">About</a></li>
+            <li><div class="profile-dropdown">
+                <div class="profile-dropdown-btn" onclick="toggle()">
+                    <a>Profil
+                    </a>
+                </div>
+                <ul class="profile-dropdown-list">
+                    <li class="profile-dropdown-list-item">
+                        <a href="profilePM.html">
+                            <i class="fa-regular fa-user"></i>
+                            PROFILE 1
+                        </a>
+                    </li>
+
+                    <li class="profile-dropdown-list-item">
+                        <a href="profilePG.html">
+                            <i class="fa-regular fa-user"></i>
+                            PROFILE 2
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            </div>
+        </ul>
+
+        <div class="nav-right">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h6>Selamat Datang  <span>di website</span></h6>
+             <h1><span>Namura</span> Hami Gabe</h1>
+            <h4 id="about">Kami Memproduksiㅤ<span class="input"></span></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum iure voluptatem sapiente esse laborum nemo expedita, aperiam omnis ut a molestiae ab pariatur facere saepe neque earum nam quibusdam asperiores unde enim temporibus quo. Totam sapiente soluta non nesciunt tenetur, error quibusdam nobis accusantium aliquid quasi officia, delectus nihil?</p>
+            
+            <div class="hero-btn">
+                <a href="#product" class="btn"><span>Lihat Produk</span><span></span></a>
+            </div>
+        </div>
+
+
+        <div class="hero-img">
+            <img src="image/hero.png">
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script type="text/javascript">
+        var typed = new Typed(".input", {
+            strings:["Karet Tromol", "Bushing", "Foot Step", "Handgrip","Rubber Seal Head", "Karet Mounting","Alas Radiator","Engine Mounting","O-Ring", "Packing Head"],
+            typeSpeed: 80,
+            backSpeed:70,
+            loop:true
+        });
+
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        }
+    </script>
+
+    <div id="product" class="main-content flex flex-col gap" >
+        <div class="produkteks">
+        <h1>PRODUK <span>KAMI</span></h1>
+        </div>
+
+        <section class="wrapper">
+            <i id="left-1" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Step Motor.jpg" alt="img-1" draggable="false"></div>
+                    <h2>Footstep All Variant</h2>
+                    
+                </li>
+                
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Handgrip.jpg" alt="img-2" draggable="false"></div>
+                    <h2>HandGrip</h2>
+                    
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Bushing.jpg" alt="img-3" draggable="false"></div>
+                    <h2>Bushing</h2>
+                    
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Karet Tromol.jpg" alt="img-4" draggable="false"></div>
+                    <h2>Karet Tromol</h2>
+                    
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Karet Mounting.jpg" alt="img-5" draggable="false"></div>
+                    <h2>Karet Mounting</h2>
+                    
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Rubber SealHead.jpg " alt="img-6" draggable="false"></div>
+                    <h2>Rubber Seal Head</h2>
+                    
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Packing Head D.85.png" alt="img-7" draggable="false"></div>
+                    <h2>Packing Head</h2>
+                    
+                </li>
+            </ul>
+            <i id="right-1" class="fa-solid fa-angle-right"></i>
+        </section>
+
+        <section class="wrapper">
+            <i id="left-2" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Alas Radiator 1454.png" alt="img-1" draggable="false"></div>
+                    <h2>Alas Radiator</h2>
+                    
+                </li>
+                
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Engine Mounting BITELY.png" alt="img-2" draggable="false"></div>
+                    <h2>Engine Mounting BITELY</h2>
+                    
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Engine Mounting CAT 320 E PN JM1-250B YDB2-9.png" alt=img-3 draggable="false"></div>
+                    <h2>Engine Mounting CAT 320</h2>
+                    
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Rubber Coupel D.61.png" alt="img-4" draggable="false"></div>
+                    <h2>Rubber Coupel</h2>
+                    
+                </li>
+                
+                <li class="card">
+                    <div class="img"><img src="image/Barang/SPEAK GREAS.png" alt="img-5" draggable="false"></div>
+                    <h2>Speak Greas</h2>
+                    
+                </li>
+                
+                <li class="card">
+                    <div class="img"><img src="image/Barang/Tutup Oli - N.png" alt="img-6" draggable="false"></div>
+                    <h2>Tutup Oli</h2>
+                    
+                </li>
+            </ul>
+            <i id="right-2" class="fa-solid fa-angle-right"></i>
+        </section>
+    </div> 
+</body>
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+
+    <ul class="menu">
+        <p>--------ㅤ</p>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <p>ㅤ--------</p>
+    </ul>
+
+    <ul id="footer" class="ms-icon">
+        <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+    </ul>
+    
+    <p>__________________________________________________________</p>
+    <p>&copy; 2024 Namura Hami Gabe | All Rights Reserved.</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namura Hami Gabe</title>
+    <link rel="shortcut icon" href="assets/domain.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Namura Hami Gabe</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="pagunung.html">Others</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="https://namurahamigabe.blogspot.com/">Namura</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="pagunung.html" onclick="toggleMenu()">Others</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/pamahar.jpg" alt="John Doe profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Maharudin Hasibuan</h1>
+            <p class="section__text__p2">Director</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+            </div>
+            <div id="socials-container" class="">
+                
+                <img src="./assets/site-alt.png" alt="" class="icon" onclick="location.href='https://namurahamigabe.blogspot.com/'" />
+                   <p><a href="https://namurahamigabe.blogspot.com/">Browser</a></p>
+
+                <img src="assets/communication.png" alt="" class="icon" onclick="location.href='https://www.facebook.com/Maharuddinhsb'" />
+                   <p><a href="https://www.facebook.com/Maharuddinhsb">Facebook</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/fg.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Manufacturing, Trade, Automotive Services Categories  <br /></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>S.T Sarjana Teknik (Polman)<br /></p>
+                    </div>
+                </div>
+                <style></style><div class="text-container">
+                        <img src="./assets/phone-book.png" alt="Education icon" class="icon" />
+                        <h3>More</h3>
+                        <p> 
+                            Interest : in Traveling, Working<br>
+                            Favorite Film : Action Movie<br>
+                            Favorite Music : Jazz Music<br>
+                            Favorite Book : Business Books<br>
+                        </p>
+                    </div>
+            </div></style>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title"> One</h2>
+                    <div class="article-container">
+                        <img src="assets/cnca.jpg" class="project-img" />Mastering CNC machine programming. (Computer Numercial Control)
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Two</h2>
+                    <div class="article-container">
+                        <img src="./assets/bhs.jpg" alt="Project 2" class="project-img" />Master Indonesian,
+                        Master English,
+                        Master Arabic.
+                    </div>
+                    
+        
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title"> Three</h2>
+                    <div class="article-container">
+                        <img src="/assets/rapat.png" alt="Project 3" class="project-img" />Experience managing a company.<br>one of them is Namura Hami Gabe.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/niga.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="https://Wa.me//085100227550">085100227550</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/twitter.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://x.com/maharuddinh">twitter</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="pagunung.html">Others</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Namura . All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
